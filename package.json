@@ -1,0 +1,24 @@
+{
+  "name": "app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "pnpm --filter web... build",
+    "lint": "pnpm --filter \"./packages/**\" lint",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "packageManager": "pnpm@10.12.4",
+  "dependencies": {
+    "@supabase/supabase-js": "^2.50.5"
+  },
+  "pnpm": {
+    "overrides": {
+      "@repo/eslint-config": "workspace:*",
+      "@repo/typescript-config": "workspace:*"
+    }
+  }
+}
