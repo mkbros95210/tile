@@ -8,10 +8,16 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      colors: {
+        'brand-primary': '#00f2ff',
+        'brand-secondary': '#00a2ff',
+        'glass-morph': 'rgba(255, 255, 255, 0.1)',
+      },
       backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+        'gradient-primary': 'linear-gradient(to right, #00f2ff, #00a2ff)',
+      },
+      backdropBlur: {
+        'xl': '20px',
       },
     },
   },
