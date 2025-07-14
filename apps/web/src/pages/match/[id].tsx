@@ -1,6 +1,7 @@
 import { useRouter } from 'next/router'
 import { Card } from '@repo/ui/card'
 import { Button } from '@repo/ui/button'
+import { LiveChat } from './components/LiveChat'
 
 // This is a placeholder for a real match data fetching hook
 const useMatch = (id: string) => {
@@ -42,6 +43,7 @@ export default function MatchPage() {
             <h2 className="text-2xl font-bold mb-2">Live Stream</h2>
             {/* Placeholder for the live stream component */}
             <div className="bg-black aspect-video"></div>
+            <LiveChat />
           </Card>
         </div>
         <div>
